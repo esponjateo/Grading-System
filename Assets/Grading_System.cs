@@ -16,6 +16,7 @@ public class Grading_System : MonoBehaviour
 
     public float Add1;
     public float Add2;
+    public float Add3;
 
     public float Divide1;
     public float Divide2;
@@ -87,14 +88,15 @@ public class Grading_System : MonoBehaviour
 
             Add1 = ww1 + ww2 + ww3;
             Add2 = pt1 + pt2;
+            Add3 = qa;  
 
             Divide1 = Add1 / 70;
             Divide2 = Add2 / 56;
-            Divide3 = qa / 50;
+            Divide3 = Add3 / 50;
 
-            Total1 = Divide1 * 25;
-            Total2 = Divide2 * 50;
-            Total3 = Divide3 * 25;
+            Total1 = Divide1 * 20;
+            Total2 = Divide2 * 60;
+            Total3 = Divide3 * 20;
 
             TotalScore = Total1 + Total2 + Total3;
 
